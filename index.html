@@ -1,196 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/c29e52c03b.js" crossorigin="anonymous"></script>
-</head>
-<body>
-    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="./img/duck.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
-            </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Catalogo libri</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Anagrafica Utenti</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Storico Prestiti</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Help</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-    </nav>
-    <div class="container">
-      <div class="col">
-        <div class="d-flex py-3 justify-content-between">
-            <span>Catalogo libri</span>
-            <button type="button" class="btn btn-primary">Aggiungi libro</button>
-        </div>
-        <table class="table table-striped">
-            <thead>
-            <tr>
-                <th scope="col">Titolo</th>
-                <th scope="col">Data prestito</th>
-                <th scope="col">Stato</th>
-                <th scope="col">Azioni</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-            <td scope="row"><span>I pilastri della terra</span></td>
-            <td><span>-</span></td>
-            <td>
-                <button type="button" class="btn btn-success"><span class="my-btn">Disponibile</span></button>
-            </td>
-            <td>
-                <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pen"></i></button>
-                <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>
-            </td>
-          </tr>
-
-          <tr>
-            <td scope="row"><span>I Promessi sposi</span></td>
-            <td><span>-</span></td>
-            <td>
-                <button type="button" class="btn btn-success"><span class="my-btn">Disponibile</span></button>
-            </td>
-            <td>
-                <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pen"></i></button>
-                <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>
-            </td>
-          </tr>
-
-          <tr>
-            <td scope="row"><span>Il signore degli anelli</span></td>
-            <td><span>18/10/2023</span></td>
-            <td>
-                <button type="button" class="btn btn-warning"><span class="my-btn">In prestito</span></button>
-            </td>
-            <td>
-                <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pen"></i></button>
-                <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>
-            </td>
-          </tr>
-
-          <tr>
-            <td scope="row"><span>Harry Potter e la pietra filosofale</span></td>
-            <td><span>-</span></td>
-            <td>
-                <button type="button" class="btn btn-success"><span class="my-btn">Disponibile</span></button>
-            </td>
-            <td>
-                <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pen"></i></button>
-                <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>
-            </td>
-          </tr>
-
-          <tr>
-            <td scope="row"><span>Il codice Da Vinci</span></td>
-            <td><span>-</span></td>
-            <td>
-                <button type="button" class="btn btn-danger"><span class="my-btn">Non disponibile</span></button>
-            </td>
-            <td>
-                <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pen"></i></button>
-                <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>
-            </td>
-          </tr>
-
-        </tbody>
-        </table>
-      </div>
-      <div class="col">
-        <div class="card">
-          <div class="card-header">
-            Todo
-          </div>
-          <div class="card-body">
-            <ul class="list-group">
-              <li class="list-group-item">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                  <label class="form-check-label" for="flexCheckDefault">
-                    <span>Chiamare segreteria</span>
-                  </label>
-                </div>
-              </li>
-              <li class="list-group-item">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                  <label class="form-check-label" for="flexCheckDefault">
-                    <span>Mandare avvisi prestiti scaduti</span>
-                  </label>
-                </div>
-              </li>
-              <li class="list-group-item">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                  <label class="form-check-label" for="flexCheckDefault">
-                    <span>Ordinare nuovi libri</span>
-                  </label>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header">
-            <span>F.A.Q.</span>
-          </div>
-          <div class="card-body">
-            <div class="accordion accordion-flush" id="accordionFlushExample">
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                    <span>Come aggiungere un nuovo libro?</span>
-                  </button>
-                </h2>
-                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, eligendi. Temporibus omnis dolorum veritatis, aliquam deserunt ad? Facilis, earum consectetur.</div>
-                </div>
-              </div>
-
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                    <span>Come posso accedere all'anagrafica utenti?</span>
-                  </button>
-                </h2>
-                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, eligendi. Temporibus omnis dolorum veritatis, aliquam deserunt ad? Facilis, earum consectetur.</div>
-                </div>
-              </div>
-
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                    <span>Posso usare questa dashboard da mobile?</span>
-                  </button>
-                </h2>
-                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, eligendi. Temporibus omnis dolorum veritatis, aliquam deserunt ad? Facilis, earum consectetur.</div>
-                </div>
-              </div>
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="./css/style.css">
+      <title>Document</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+      <script src="https://kit.fontawesome.com/c29e52c03b.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+          <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                  <img src="./img/duck.png" alt="Logo" width="30" height="30">
+              </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Catalogo libri</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Anagrafica Utenti</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Storico Prestiti</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Help</a>
+                </li>
+              </ul>
             </div>
           </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="main-content py-3">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8">
+              <div class="py-3 d-flex justify-content-between align-items-center">
+                <h1 class="fs-4">Catalogo libri</h1>
+                <a href="./add.html" class="btn btn-primary btn-sm">Aggiungi libro</a>
+              </div>
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th class="w-50">Titolo</th>
+                    <th class="d-none d-md-table-cell">Data prestito</th>
+                    <th>Stato</th>
+                    <th>Azioni</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td scope="row"><span>I pilastri della terra</span></td>
+                    <td><span>-</span></td>
+                    <td>
+                      <button type="button" class="btn btn-success"><span class="my-btn">Disponibile</span></button>
+                    </td>
+                    <td>
+                      <div class="d-flex gap-1">
+                        <a href="#" class="btn btn-outline-secondary"><i class="fa-solid fa-pen"></i></a>
+                        <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>
+                      </div>
+                      </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="col-lg-4">
+              <div class="card mb-3">
+                <div class="card-header">
+                  Todo
+                </div>
+                <div class="card-body">
+                  <ul class="list-group">
+                    <li class="list-group-item">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          <span>Chiamare segreteria</span>
+                        </label>
+                      </div>
+                    </li>
+                    <li class="list-group-item">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          <span>Mandare avvisi prestiti scaduti</span>
+                        </label>
+                      </div>
+                    </li>
+                    <li class="list-group-item">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          <span>Ordinare nuovi libri</span>
+                        </label>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header">
+                  <span>F.A.Q.</span>
+                </div>
+                <div class="card-body">
+                  <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                          <span>Come aggiungere un nuovo libro?</span>
+                        </button>
+                      </h2>
+                      <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, eligendi. Temporibus omnis dolorum veritatis, aliquam deserunt ad? Facilis, earum consectetur.</div>
+                      </div>
+                    </div>
+
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                          <span>Come posso accedere all'anagrafica utenti?</span>
+                        </button>
+                      </h2>
+                      <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, eligendi. Temporibus omnis dolorum veritatis, aliquam deserunt ad? Facilis, earum consectetur.</div>
+                      </div>
+                    </div>
+
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                          <span>Posso usare questa dashboard da mobile?</span>
+                        </button>
+                      </h2>
+                      <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, eligendi. Temporibus omnis dolorum veritatis, aliquam deserunt ad? Facilis, earum consectetur.</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
         </div>
-      </div>
-    </div>
+      </section>
+    </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-</body>
+  </body>
 </html>
