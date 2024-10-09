@@ -9,33 +9,110 @@
     <script src="https://kit.fontawesome.com/c29e52c03b.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="./img/duck.png" alt="Logo" width="30" height="30">
-            </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./index.html">Catalogo libri</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Anagrafica Utenti</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Storico Prestiti</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Help</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-    </nav>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="./img/duck.png" alt="Logo" width="30" height="30">
+                </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./index.html">Catalogo libri</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Anagrafica Utenti</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Storico Prestiti</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Help</a>
+                </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+    </header>
 
+    <main>
+        <div class="container">
+            <h1 class="py-2">Nuovo Libro</h1>
+            <div class="row mb-2">
+                <div class="col-6">
+                    <label for="author-name" class="form-label">Nome Autore</label>
+                    <input type="text" class="form-control" id="author-name" placeholder="Inserisci il nome dell'autore">
+                </div>
+                <div class="col-6">
+                    <label for="author-surname" class="form-label">Cognome Autore</label>
+                    <input type="text" class="form-control" id="author-surname" placeholder="Inserisci il cognome dell'autore" required>
+                </div>
+            </div>
+
+            <div class="row mb-2">
+                <div class="col">
+                    <label for="title" class="form-label">Titolo</label>
+                    <input type="text" class="form-control" id="title" placeholder="Inserisci il titolo del libro" required>
+                    <div id="passwordHelpBlock" class="form-text">
+                        Titolo versione italiana
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 mb-2">
+                    <label for="genre" class="form-label">Genere</label>
+                    <select class="form-select" name="genre">
+                        <option selected disabled>Scegli il genere</option>
+                        <option value="1">Narrativa</option>
+                        <option value="2">Giallo</option>
+                        <option value="3">Bambini</option>
+                      </select>
+                </div>
+
+                <div class="col-lg-4 mb-2">
+                    <label for="pub-year" class="form-label">Anno di Pubblicazione</label>
+                    <input type="text" class="form-control" id="pub-year" placeholder="Inserisci l'anno" maxlength="4">
+                </div>
+
+                <div class="col-lg-4 mb-2">
+                    <label for="ISBN" class="form-label">ISBN#</ISBN></label>
+                    <input type="text" class="form-control" id="ISBN" placeholder="Inserisci il codice ISBN#" required>
+                </div>
+            </div>
+
+            <hr class="hr" />
+
+            <div class="row">
+                <div class="col">
+                    <label for="note" class="form-label">Note</label>
+                    <textarea class="form-control mb-2" id="note" rows="10">Inserisci eventuali note sul libro
+                    </textarea>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <div class="form-check mb-2">
+                        <input class="form-check-input" type="checkbox" value="" id="digital">
+                        <label class="form-check-label" for="digital">
+                            Disponibile anche in digitale
+                        </label>
+                  </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <button type="submit" class="btn btn-primary mb-2">Aggiungi libro</button>
+                </div>
+            </div>
+
+        </div>
+    </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
