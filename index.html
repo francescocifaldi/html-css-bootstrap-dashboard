@@ -11,30 +11,36 @@
   <body>
     <header>
       <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
-          <div class="container-fluid">
-              <a class="navbar-brand" href="#">
-                  <img src="./img/duck.png" alt="Logo" width="30" height="30">
-              </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Catalogo libri</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Anagrafica Utenti</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Storico Prestiti</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Help</a>
-                </li>
-              </ul>
-            </div>
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="./img/duck.png" height="30px" alt="Logo">
+          </a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Catalogo Libri</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Anagrafica Utenti</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="#">Storico prestiti</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Help</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Cerca..." aria-label="Search" data-bs-theme="light">
+              <button class="btn btn-outline-light" type="submit">Cerca</button>
+            </form>
           </div>
+        </div>
       </nav>
     </header>
 
@@ -58,18 +64,75 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td scope="row"><span>I pilastri della terra</span></td>
+                    <td><span>I pilastri della terra</span></td>
                     <td class="d-none d-md-table-cell"><span>-</span></td>
                     <td>
-                      <button type="button" class="btn btn-success"><span class="my-btn">Disponibile</span></button>
+                      <span class="btn btn-success text-white">Disponibile</span>
                     </td>
                     <td>
                       <div class="d-flex gap-1">
                         <a href="#" class="btn btn-outline-secondary"><i class="fa-solid fa-pen"></i></a>
                         <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>
                       </div>
-                      </td>
+                    </td>
                   </tr>
+
+                  <tr>
+                    <td><span>I Promessi Sposi</span></td>
+                    <td class="d-none d-md-table-cell"><span>-</span></td>
+                    <td>
+                      <span class="btn btn-success text-white">Disponibile</span>
+                    </td>
+                    <td>
+                      <div class="d-flex gap-1">
+                        <a href="#" class="btn btn-outline-secondary"><i class="fa-solid fa-pen"></i></a>
+                        <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td><span>Il Signore degli Anelli</span></td>
+                    <td class="d-none d-md-table-cell"><span>18/10/2023</span></td>
+                    <td>
+                      <span class="btn btn-warning text-white">In prestito</span>
+                    </td>
+                    <td>
+                      <div class="d-flex gap-1">
+                        <a href="#" class="btn btn-outline-secondary"><i class="fa-solid fa-pen"></i></a>
+                        <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td><span>Harry Potter e la pietra filosofale</span></td>
+                    <td class="d-none d-md-table-cell"><span>-</span></td>
+                    <td>
+                      <span class="btn btn-success text-white">Disponibile</span>
+                    </td>
+                    <td>
+                      <div class="d-flex gap-1">
+                        <a href="#" class="btn btn-outline-secondary"><i class="fa-solid fa-pen"></i></a>
+                        <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td><span>Il codice Da Vinci</span></td>
+                    <td class="d-none d-md-table-cell"><span>-</span></td>
+                    <td>
+                      <span class="btn btn-danger text-white">Non disponibile</span>
+                    </td>
+                    <td>
+                      <div class="d-flex gap-1">
+                        <a href="#" class="btn btn-outline-secondary"><i class="fa-solid fa-pen"></i></a>
+                        <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>
+                      </div>
+                    </td>
+                  </tr>
+
                 </tbody>
               </table>
             </div>
